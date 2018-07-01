@@ -24,9 +24,9 @@ public class ArrayManipulation {
 		assertEquals("engrossed", testArray[4]);
 		assertEquals("fascinated", testArray[5]);
 		assertEquals("snoopy", testArray[testArray.length - 1]);
-	}
+	}}
 
-	@Test
+/*	@Test
 	public void testSortARandomArray() throws Exception {
 
 		String[] testArray = new String[100];
@@ -163,3 +163,4 @@ public class ArrayManipulation {
 	}
 
 }
+*/
