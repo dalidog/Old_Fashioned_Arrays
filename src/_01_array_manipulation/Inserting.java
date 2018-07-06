@@ -21,4 +21,29 @@ public class Inserting {
 			
 	}
 		return testArray2;
-}}
+}
+
+	public static String[] insertAlphabetically(String[] orderedArray, String string) {
+		// TODO Auto-generated method stub
+		boolean hasInserted = false;
+		String[] outputArray = new String[orderedArray.length+1];
+		for (int i = 0; i < orderedArray.length; i++) {
+			if(string.compareTo(orderedArray[i])<0 && string.compareTo(orderedArray[i+1])>0) {
+				outputArray[i] = string;
+				hasInserted = true;
+			}
+			else if(hasInserted == true) {
+				outputArray[i] = orderedArray[i-1];
+			}
+		else {
+				outputArray[i] = orderedArray[i];
+			}
+			
+		}
+		
+				
+		
+			
+		
+		return orderedArray;
+	}}

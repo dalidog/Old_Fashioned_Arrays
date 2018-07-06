@@ -66,7 +66,7 @@ public class ArrayManipulation {
 		}
 	}
 
-/*	@Test
+	@Test
 	public void testInsertInOrderFirst() throws Exception {
 		String[] orderedArray = { "concerned", "affected", "fascinated",
 				"intrigued", "absorbed", "inquisitive", "nosy", "snoopy",
@@ -92,7 +92,7 @@ public class ArrayManipulation {
 		);
 	}
 
-	@Test
+/*	@Test
 	public void testInsertInOrderMiddle() throws Exception {
 		String[] orderedArray = { "concerned", "affected", "fascinated",
 				"intrigued", "absorbed", "inquisitive", "nosy", "snoopy",
