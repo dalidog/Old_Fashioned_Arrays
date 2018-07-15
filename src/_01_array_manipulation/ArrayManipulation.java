@@ -146,7 +146,7 @@ public class ArrayManipulation {
 		);
 	}
 	
-	/*@Test
+	@Test
 	public void testInsertInOrderWithRandomArray() throws Exception {
 		String[] orderedArray = new String[100];
 		for (int i = 0; i < 100; ++ i) {
@@ -160,5 +160,5 @@ public class ArrayManipulation {
 			assertTrue(outputArray[i].compareTo(outputArray[i+1]) <= 0);
 		}
 	}
-*/
+
 }

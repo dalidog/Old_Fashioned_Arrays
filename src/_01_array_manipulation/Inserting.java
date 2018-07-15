@@ -26,7 +26,7 @@ public class Inserting {
 
 		for (int i = 0; i < outputArray.length; i++) {
 			
-			 if (hasInserted==false && string.compareTo(orderedArray[i]) <= 0 && i != orderedArray.length) {
+			 if ( i != orderedArray.length && hasInserted==false && string.compareTo(orderedArray[i]) <= 0) {
 				outputArray[i] = string;
 				hasInserted = true;
 			} else if (hasInserted == true) {

@@ -42,7 +42,7 @@ public class CustomArrayListTest {
 		list.add('G');
 		list.add('O');
 		
-		list.addAt(2, 'E');
+		list.add(2, 'E');
 		
 		if(list.get(0) != 'D') fail("list.get(0) returning improper value.");
 		if(list.get(1) != 'I') fail("list.get(1) returning improper value.");
@@ -51,7 +51,7 @@ public class CustomArrayListTest {
 		if(list.get(4) != 'O') fail("list.get(4) returning improper value.");
 	}
 	
-	@Test
+	//@Test
 	public void testRemove() {
 		class Student { 
 			public String name; 
@@ -86,7 +86,7 @@ public class CustomArrayListTest {
 		}
 	}
 	
-	@Test
+	//@Test
 	public void testContains() {
 		ArrayList<String> list = new ArrayList<String>();
 		list.add("This");
@@ -100,5 +100,6 @@ public class CustomArrayListTest {
 		assertTrue(list.contains("only"));
 		assertFalse(list.contains("the"));
 		assertFalse(list.contains("best"));
-	}
+	} 
+	
 }
