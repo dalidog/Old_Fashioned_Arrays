@@ -5,9 +5,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class ArrayList<E> implements List<E>{
-Object [] elements = new Object[10];
-int size = 0;
+public class ArrayList<E> implements List<E> {
+	Object[] elements = new Object[10];
+	int size = 0;
+
 	@Override
 	public int size() {
 		// TODO Auto-generated method stub
@@ -16,14 +17,13 @@ int size = 0;
 
 	@Override
 	public boolean isEmpty() {
-		if(size == 0) {
+		if (size == 0) {
 			return true;
-		}
-		else {
+		} else {
 			return false;
 		}
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -97,13 +97,13 @@ int size = 0;
 	@Override
 	public void clear() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public E get(int index) {
-	return	(E) elements[index];
-		
+		return (E) elements[index];
+
 	}
 
 	@Override
@@ -116,12 +116,33 @@ int size = 0;
 	@Override
 	public void add(int index, Object element) {
 		// TODO Auto-generated method stub
-		elements[index] = element;
+		Object[] elements2 = new Object[elements.length + 1];
+		for (int k = 0; k < elements2.length; k++) {
+			if (k == index) {
+				elements2[index] = element;
+
+			} else if (k > index) {
+				elements2[k] = elements[k - 1];
+			} else {
+				elements2[k] = elements[k];
+			}
+		}
+		elements = elements2;
+		return;
 	}
 
 	@Override
-	public Object remove(int index) {
+	public E remove(int index) {
 		// TODO Auto-generated method stub
+		for (int k = 0; k < elements.length; k++) {
+			if (k >= index) {
+				elements[index + 1] = elements[index];
+
+			} else {
+
+			}
+		}
+
 		return null;
 	}
 
