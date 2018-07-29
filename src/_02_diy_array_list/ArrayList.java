@@ -134,16 +134,18 @@ public class ArrayList<E> implements List<E> {
 	@Override
 	public E remove(int index) {
 		// TODO Auto-generated method stub
-		for (int k = 0; k < elements.length; k++) {
-			if (k >= index) {
-				elements[index + 1] = elements[index];
+
+		Object thing = elements[index];
+		for (int k = 0; k < elements.length - 1; k++) {
+			if (k >= index && k != elements.length) {
+				elements[k] = elements[k + 1];
 
 			} else {
 
 			}
 		}
 
-		return null;
+		return (E) thing;
 	}
 
 	@Override
